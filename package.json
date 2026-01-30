@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-take-indexed2",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Take elements from two indexed arrays in a single pass.",
   "license": "Apache-2.0",
   "author": {
