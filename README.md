@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import takeIndexed2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-take-indexed2@esm/index.mjs';
+import takeIndexed2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-take-indexed2@v0.1.1-esm/index.mjs';
 ```
 
 #### takeIndexed2( x, y, indices )
@@ -97,7 +97,7 @@ var out = takeIndexed2( x, y, [] );
 import filledBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled-by@esm/index.mjs';
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import takeIndexed2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-take-indexed2@esm/index.mjs';
+import takeIndexed2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-take-indexed2@v0.1.1-esm/index.mjs';
 
 // Generate linearly spaced arrays:
 var x = linspace( 0, 100, 11 );
