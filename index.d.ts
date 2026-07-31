@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,17 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MAIN //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Collection } from '@stdlib/types/array';
 
 /**
 * Takes elements from two indexed arrays in a single pass.
 *
-* @param {Collection} x - first input array
-* @param {Collection} y - second input array
-* @param {NonNegativeIntegerArray} indices - list of indices
-* @returns {Array<Array>} output arrays
+* ## Notes
+*
+* -   The function does **not** perform bounds checking. If an index is less than zero or greater than the maximum index of `x` or `y`, the value of the corresponding element in the respective output array is undefined.
+*
+* @param x - first input array
+* @param y - second input array
+* @param indices - list of element indices
+* @returns output arrays
 *
 * @example
 * var x = [ 1, 2, 3, 4 ];
@@ -36,21 +42,9 @@
 * var out = take2( x, y, indices );
 * // returns [ [ 4, 2, 3, 1 ], [ 8, 6, 7, 5 ] ]
 */
-function take2( x, y, indices ) {
-	var o1;
-	var o2;
-	var i;
-
-	o1 = [];
-	o2 = [];
-	for ( i = 0; i < indices.length; i++ ) {
-		o1.push( x[ indices[ i ] ] ); // use `Array#push` to ensure "fast" elements
-		o2.push( y[ indices[ i ] ] );
-	}
-	return [ o1, o2 ];
-}
+declare function take2<T = unknown, U = unknown>( x: Collection<T>, y: Collection<U>, indices: Collection<number> ): [ Array<T>, Array<U> ];
 
 
 // EXPORTS //
 
-module.exports = take2;
+export = take2;
